@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karunya V | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Karunya</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text" data-aos="fade-right">
+    <h1>Hi, I'm <span>Karunya V</span></h1>
+    <h3><span id="typing"></span></h3>
+    <p>
+      Passionate Computer Science student focused on building meaningful,
+      scalable, and impactful digital solutions.
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/karunya-v-1869b336b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-img" data-aos="fade-left">
+    <img src="profile.jpg" alt="Profile Photo">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science student with strong interest in application development,
+    problem solving, and emerging technologies. I enjoy transforming ideas into
+    real-world solutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" data-aos="zoom-in">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">C / Python</div>
+    <div class="card">HTML / CSS / JavaScript</div>
+    <div class="card">React Native</div>
+    <div class="card">Database & Firebase</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>NourishConnect</h3>
+      <p>
+        A platform to connect surplus food from events and restaurants
+        to orphanages, reducing food waste and helping communities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Coming Soon</h3>
+      <p>More projects will be added.</p>
+    </div>
+
+    <div class="card">
+      <h3>Coming Soon</h3>
+      <p>Stay tuned.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="zoom-in">
+  <h2>Get In Touch</h2>
+
+  <div class="contact-box">
+    <div class="card">
+      <p><i class="fas fa-envelope"></i> karunya21181208@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 8637419193</p>
+    </div>
+
+    <form class="card">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Karunya V | All Rights Reserved
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
