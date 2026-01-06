@@ -6,139 +6,113 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height:1.6;
-  background:#ffffff;
-  color:#000;
+/* VERY STRONG VISUAL CHANGE */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f10;
+  color: white;
 }
 
 /* NAVBAR */
-nav{
-  background:#222;
-  color:white;
-  padding:15px 30px;
-  position:sticky;
-  top:0;
-}
-nav a{
-  color:white;
-  margin-right:20px;
-  text-decoration:none;
-  font-weight:bold;
-}
-nav a:hover{
-  text-decoration:underline;
+nav {
+  background: black;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-/* SECTIONS */
-section{
-  padding:40px 30px;
-}
-h1,h2{
-  margin-bottom:10px;
-}
-p{
-  max-width:700px;
+nav a {
+  color: #1dd3b0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
 }
 
 /* HERO */
-.hero{
-  background:#f4f4f4;
-  padding:60px 30px;
-}
-.hero h1{
-  font-size:36px;
+.hero {
+  margin-top: 120px;
+  padding: 40px;
 }
 
-/* LIST */
-ul{
-  margin-left:20px;
+.hero h1 {
+  font-size: 42px;
 }
 
-/* CONTACT */
-.contact a{
-  color:#0066cc;
-  text-decoration:none;
+.hero span {
+  color: #1dd3b0;
 }
-.contact a:hover{
-  text-decoration:underline;
+
+/* BOX */
+.box {
+  background: #122326;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+  max-width: 600px;
 }
 
 /* FOOTER */
-footer{
-  background:#222;
-  color:white;
-  text-align:center;
-  padding:15px;
+footer {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: #aaa;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
+  <div style="color:#1dd3b0;font-weight:bold;">Karunya</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-<!-- HOME -->
 <section id="home" class="hero">
-  <h1>Hi, I'm Karunya V</h1>
+  <h1>Hi, I'm <span>Karunya V</span></h1>
   <h3>Computer Science Student</h3>
-  <p>
-    Passionate Computer Science student focused on building meaningful,
-    scalable, and impactful digital solutions.
-  </p>
+
+  <div class="box">
+    <p>
+      If you are seeing a <b>dark background</b> and <b>teal color</b>,
+      then GitHub Pages is FINALLY loading index.html correctly.
+    </p>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<section id="about" class="hero">
   <h2>About Me</h2>
-  <p>
-    I am a Computer Science student with strong interest in application development,
-    problem solving, and emerging technologies. I enjoy transforming ideas into
-    real-world solutions.
-  </p>
+  <div class="box">
+    <p>
+      I am a Computer Science student interested in application development
+      and real-world problem solving.
+    </p>
+  </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>C / Python</li>
-    <li>HTML / CSS / JavaScript</li>
-    <li>React Native</li>
-    <li>Firebase & Databases</li>
-  </ul>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <h3>NourishConnect</h3>
-  <p>
-    A platform to connect surplus food from events and restaurants
-    to orphanages, reducing food waste and helping communities.
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
+<section id="contact" class="hero">
   <h2>Contact</h2>
-  <p>Email: karunya21181208@gmail.com</p>
-  <p>Phone: 8637419193</p>
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/karunya-v-1869b336b" target="_blank">
-      View Profile
-    </a>
-  </p>
+  <div class="box">
+    <p>Email: karunya21181208@gmail.com</p>
+    <p>Phone: 8637419193</p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/karunya-v-1869b336b"
+         target="_blank"
+         style="color:#1dd3b0;">
+        View Profile
+      </a>
+    </p>
+  </div>
 </section>
 
 <footer>
