@@ -5,154 +5,119 @@
 <title>Karunya V | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- FONT AWESOME -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <style>
-:root{
-  --teal:#1dd3b0;
-  --bg:#0b0f10;
-  --card:#122326;
-  --muted:#b8d6d1;
-  --border:rgba(29,211,176,.35);
+/* VERY STRONG VISUAL CHANGE */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f10;
+  color: white;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:Poppins,Arial,sans-serif;
-  background:radial-gradient(circle at top,#122326,#0b0f10);
-  color:white;
-}
-nav{
-  position:fixed;top:0;width:100%;
-  display:flex;justify-content:space-between;
-  padding:18px 60px;
-  background:rgba(11,15,16,.85);
-  backdrop-filter:blur(10px);
-}
-nav a{color:var(--muted);margin-left:20px;text-decoration:none}
-nav a:hover{color:var(--teal)}
-.logo{color:var(--teal);font-weight:bold}
 
-section{padding:110px 60px;text-align:center}
-.hero{
-  min-height:100vh;
-  display:flex;align-items:center;justify-content:center;
-  gap:80px;
+/* NAVBAR */
+nav {
+  background: black;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.hero h1 span{color:var(--teal)}
-.hero p{color:var(--muted);max-width:500px}
-.btn{
-  display:inline-block;margin-top:20px;
-  padding:14px 32px;border-radius:30px;
-  background:linear-gradient(135deg,var(--teal),#0fb9a8);
-  color:black;font-weight:bold;text-decoration:none
+
+nav a {
+  color: #1dd3b0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
 }
-.social a{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:45px;height:45px;border-radius:50%;
-  border:1px solid var(--border);
-  color:var(--teal);margin-top:20px
+
+/* HERO */
+.hero {
+  margin-top: 120px;
+  padding: 40px;
 }
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;margin-top:40px
+
+.hero h1 {
+  font-size: 42px;
 }
-.card{
-  background:var(--card);
-  border:1px solid var(--border);
-  padding:25px;border-radius:16px
+
+.hero span {
+  color: #1dd3b0;
 }
-.contact-center{
-  display:flex;justify-content:center
+
+/* BOX */
+.box {
+  background: #122326;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 30px;
+  max-width: 600px;
 }
-footer{
-  background:#080c0d;
-  padding:20px;color:var(--muted);text-align:center
+
+/* FOOTER */
+footer {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: #aaa;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <nav>
-  <div class="logo">Karunya</div>
+  <div style="color:#1dd3b0;font-weight:bold;">Karunya</div>
   <div>
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <section id="home" class="hero">
-  <div data-aos="fade-right">
-    <h1>Hi, I'm <span>Karunya V</span></h1>
-    <h3 id="typing"></h3>
-    <p>Computer Science student focused on meaningful digital solutions.</p>
-    <a href="#projects" class="btn">View Projects</a>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/karunya-v-1869b336b" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
+  <h1>Hi, I'm <span>Karunya V</span></h1>
+  <h3>Computer Science Student</h3>
+
+  <div class="box">
+    <p>
+      If you are seeing a <b>dark background</b> and <b>teal color</b>,
+      then GitHub Pages is FINALLY loading index.html correctly.
+    </p>
+  </div>
+</section>
+
+<section id="about" class="hero">
+  <h2>About Me</h2>
+  <div class="box">
+    <p>
+      I am a Computer Science student interested in application development
+      and real-world problem solving.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="hero">
+  <h2>Contact</h2>
+  <div class="box">
+    <p>Email: karunya21181208@gmail.com</p>
+    <p>Phone: 8637419193</p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/karunya-v-1869b336b"
+         target="_blank"
+         style="color:#1dd3b0;">
+        View Profile
       </a>
-    </div>
+    </p>
   </div>
 </section>
 
-<section id="about" data-aos="fade-up">
-  <h2 style="color:var(--teal)">About Me</h2>
-  <p>I love turning ideas into real-world applications.</p>
-</section>
-
-<section id="skills" data-aos="zoom-in">
-  <h2 style="color:var(--teal)">Technical Skills</h2>
-  <div class="grid">
-    <div class="card">C / Python</div>
-    <div class="card">HTML / CSS / JavaScript</div>
-    <div class="card">React Native</div>
-    <div class="card">Firebase</div>
-  </div>
-</section>
-
-<section id="projects" data-aos="fade-up">
-  <h2 style="color:var(--teal)">Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>NourishConnect</h3>
-      <p>Connecting surplus food to orphanages.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" data-aos="zoom-in">
-  <h2 style="color:var(--teal)">Get In Touch</h2>
-  <div class="contact-center">
-    <div class="card">
-      <p><i class="fas fa-envelope"></i> karunya21181208@gmail.com</p>
-      <p><i class="fas fa-phone"></i> 8637419193</p>
-    </div>
-  </div>
-</section>
-
-<footer>© 2026 Karunya V</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({duration:1000,once:true});
-const text="Computer Science Student";
-let i=0;
-function type(){
-  if(i<text.length){
-    document.getElementById("typing").innerHTML+=text[i++];
-    setTimeout(type,80);
-  }
-}
-type();
-</script>
+<footer>
+  © 2026 Karunya V
+</footer>
 
 </body>
 </html>
