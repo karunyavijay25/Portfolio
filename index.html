@@ -5,154 +5,216 @@
 <title>Karunya V | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <style>
-:root{
-  --teal:#1dd3b0;
-  --bg:#0b0f10;
-  --card:#122326;
-  --muted:#b8d6d1;
-  --border:rgba(29,211,176,.35);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:Poppins,Arial,sans-serif;
-  background:radial-gradient(circle at top,#122326,#0b0f10);
-  color:white;
-}
-nav{
-  position:fixed;top:0;width:100%;
-  display:flex;justify-content:space-between;
-  padding:18px 60px;
-  background:rgba(11,15,16,.85);
-  backdrop-filter:blur(10px);
-}
-nav a{color:var(--muted);margin-left:20px;text-decoration:none}
-nav a:hover{color:var(--teal)}
-.logo{color:var(--teal);font-weight:bold}
 
-section{padding:110px 60px;text-align:center}
+body{
+  background:#f5f7fb;
+  color:#222;
+}
+
+/* HERO */
 .hero{
-  min-height:100vh;
-  display:flex;align-items:center;justify-content:center;
-  gap:80px;
+  background:linear-gradient(120deg,#6a7cff,#7a5cc8);
+  color:white;
+  text-align:center;
+  padding:80px 20px 60px;
+  border-bottom-left-radius:25px;
+  border-bottom-right-radius:25px;
 }
-.hero h1 span{color:var(--teal)}
-.hero p{color:var(--muted);max-width:500px}
-.btn{
-  display:inline-block;margin-top:20px;
-  padding:14px 32px;border-radius:30px;
-  background:linear-gradient(135deg,var(--teal),#0fb9a8);
-  color:black;font-weight:bold;text-decoration:none
+
+.avatar{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 15px;
+  font-size:40px;
 }
-.social a{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:45px;height:45px;border-radius:50%;
-  border:1px solid var(--border);
-  color:var(--teal);margin-top:20px
+
+.hero h1{
+  font-size:28px;
 }
-.grid{
+
+.hero p{
+  opacity:0.9;
+  margin-top:6px;
+}
+
+.buttons{
+  margin-top:20px;
+}
+
+.buttons a{
+  display:inline-block;
+  margin:5px;
+  padding:8px 16px;
+  background:rgba(255,255,255,0.25);
+  color:white;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  background:white;
+  padding:10px;
+  margin-top:-20px;
+  border-radius:25px;
+  width:90%;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.nav a{
+  padding:6px 14px;
+  border-radius:16px;
+  text-decoration:none;
+  color:#555;
+  font-size:14px;
+}
+
+.nav a:hover{
+  background:#eef1ff;
+}
+
+/* SECTION */
+section{
+  padding:50px 20px;
+  text-align:center;
+}
+
+section h2{
+  color:#6a7cff;
+  margin-bottom:15px;
+}
+
+/* CARDS */
+.cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;margin-top:40px
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:30px auto 0;
 }
+
 .card{
-  background:var(--card);
-  border:1px solid var(--border);
-  padding:25px;border-radius:16px
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.08);
 }
-.contact-center{
-  display:flex;justify-content:center
+
+.card i{
+  font-size:28px;
+  color:#6a7cff;
+  margin-bottom:10px;
 }
+
+/* FOOTER */
 footer{
-  background:#080c0d;
-  padding:20px;color:var(--muted);text-align:center
+  background:#1e2430;
+  color:white;
+  padding:30px 20px;
+  text-align:center;
+}
+
+footer a{
+  color:#9aa4ff;
+  text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="logo">Karunya</div>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="avatar">
+    <i class="fas fa-user-graduate"></i>
   </div>
-</nav>
+  <h1>Karunya V</h1>
+  <p>BSc Computer Science Student | Aspiring Developer</p>
 
-<section id="home" class="hero">
-  <div data-aos="fade-right">
-    <h1>Hi, I'm <span>Karunya V</span></h1>
-    <h3 id="typing"></h3>
-    <p>Computer Science student focused on meaningful digital solutions.</p>
-    <a href="#projects" class="btn">View Projects</a>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/karunya-v-1869b336b" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
+  <div class="buttons">
+    <a href="mailto:karunya21181208@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="tel:8637419193"><i class="fas fa-phone"></i> Call</a>
+    <a href="https://www.linkedin.com/in/karunya-v-1869b336b" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Computer Science student interested in software development and
+    real-world problem solving. I enjoy learning new technologies and
+    building meaningful applications.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card"><i class="fas fa-code"></i><p>C / Python</p></div>
+    <div class="card"><i class="fas fa-laptop-code"></i><p>HTML / CSS / JS</p></div>
+    <div class="card"><i class="fas fa-mobile-alt"></i><p>React Native</p></div>
+    <div class="card"><i class="fas fa-database"></i><p>Firebase</p></div>
   </div>
 </section>
 
-<section id="about" data-aos="fade-up">
-  <h2 style="color:var(--teal)">About Me</h2>
-  <p>I love turning ideas into real-world applications.</p>
-</section>
-
-<section id="skills" data-aos="zoom-in">
-  <h2 style="color:var(--teal)">Technical Skills</h2>
-  <div class="grid">
-    <div class="card">C / Python</div>
-    <div class="card">HTML / CSS / JavaScript</div>
-    <div class="card">React Native</div>
-    <div class="card">Firebase</div>
-  </div>
-</section>
-
-<section id="projects" data-aos="fade-up">
-  <h2 style="color:var(--teal)">Projects</h2>
-  <div class="grid">
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
     <div class="card">
-      <h3>NourishConnect</h3>
-      <p>Connecting surplus food to orphanages.</p>
+      <i class="fas fa-seedling"></i>
+      <h4>NourishConnect</h4>
+      <p>Connecting surplus food to orphanages to reduce food waste.</p>
     </div>
   </div>
 </section>
 
-<section id="contact" data-aos="zoom-in">
-  <h2 style="color:var(--teal)">Get In Touch</h2>
-  <div class="contact-center">
-    <div class="card">
-      <p><i class="fas fa-envelope"></i> karunya21181208@gmail.com</p>
-      <p><i class="fas fa-phone"></i> 8637419193</p>
-    </div>
-  </div>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Get In Touch</h2>
+  <p>Email: karunya21181208@gmail.com</p>
+  <p>Phone: 8637419193</p>
 </section>
 
-<footer>© 2026 Karunya V</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({duration:1000,once:true});
-const text="Computer Science Student";
-let i=0;
-function type(){
-  if(i<text.length){
-    document.getElementById("typing").innerHTML+=text[i++];
-    setTimeout(type,80);
-  }
-}
-type();
-</script>
+<footer>
+  © 2026 Karunya V<br>
+  <a href="https://www.linkedin.com/in/karunya-v-1869b336b" target="_blank">
+    LinkedIn Profile
+  </a>
+</footer>
 
 </body>
 </html>
