@@ -153,32 +153,16 @@ section p {
   transform: translateY(-8px);
 }
 
-/* CONTACT */
-.contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 900px;
-  margin: auto;
+/* CONTACT CENTER */
+.contact-box.single {
+  display: flex;
+  justify-content: center;
 }
 
-input, textarea {
+.contact-box.single .card {
+  max-width: 500px;
   width: 100%;
-  margin-bottom: 15px;
-  padding: 12px;
-  background: #0e1a1c;
-  border: 1px solid var(--border);
-  color: white;
-  border-radius: 8px;
-}
-
-button {
-  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
-  border: none;
-  padding: 12px;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
+  text-align: center;
 }
 
 /* FOOTER */
